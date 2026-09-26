@@ -8,7 +8,7 @@ from sqlalchemy.exc import SQLAlchemyError
 logger = logging.getLogger(__name__)
 
 DB_URL = URL.create(
-    drivername="postgresql+psycopg",
+    drivername="postgresql",
     username=os.getenv("DB_USER", "postgres"),
     password=os.getenv("DB_PASSWORD", "postgres"),
     host=os.getenv("DB_HOST", "localhost"),
